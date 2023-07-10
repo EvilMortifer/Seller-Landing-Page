@@ -1,30 +1,52 @@
-$('.multiple-card-slider .carousel').each(function(){
-  var currentCarouselId = '#' + $(this).attr('id');
-  const multipleItemCarousel = document.querySelector(currentCarouselId);
+$(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000, //2000ms = 2s;
+    autoplayHoverPause: true,
+    responsive:{
+ 0:{
+     items:1
+ },
+ 600:{
+     items:1
+ },
+ 1000:{
+     items:4
+ }
+}
+  });
 
-  if(window.matchMedia("(min-width:576px)").matches){
-      const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-          interval: false,
-          wrap: false
-      })
-      var carouselWidth = $(currentCarouselId + ' .carousel-inner')[0].scrollWidth;
-      var cardWidth = $(currentCarouselId + ' .carousel-item').width();
-      var scrollPosition = 1;    
-      $(currentCarouselId + ' .carousel-control-next').on('click', function(){
-          if(scrollPosition < (carouselWidth - (cardWidth * 2))){
-              console.log('next');
-              scrollPosition = scrollPosition + cardWidth;
-              $(currentCarouselId + ' .carousel-inner').animate({scrollLeft: scrollPosition},600);
-          }
-      });
-      $(currentCarouselId + ' .carousel-control-prev').on('click', function(){
-          if(scrollPosition > 0){
-              console.log('prev');
-              scrollPosition = scrollPosition - cardWidth;
-              $(currentCarouselId + ' .carousel-inner').animate({scrollLeft: scrollPosition},600);
-          }
-      });
-  }else{
-      $(multipleItemCarousel).addClass('slide');
-  }
-});
+  $(".slider2").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000, //2000ms = 2s;
+    autoplayHoverPause: true,
+    responsive:{
+     0:{
+        items: 2
+     },
+     600:{
+        items: 2
+     },
+     1000:{
+        items: 6
+     }
+    }
+  });
+  $(".slider3").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000, //2000ms = 2s;
+    autoplayHoverPause: true,
+    responsive:{
+     0:{
+        items: 2
+     },
+     600:{
+        items: 2
+     },
+     1000:{
+        items: 5
+     }
+    }
+  });
