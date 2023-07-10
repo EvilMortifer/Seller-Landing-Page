@@ -1,1191 +1,1694 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+   <head>
+      
+      
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      
+      <style>
+         @font-face {
+         font-family: 'Open Sans';
+         src: url('https://www.kitchenbrandstore.com/public/assets/fonts/OpenSans/OpenSans-SemiBold.ttf');
+         font-weight: 600;
+         font-display: swap;
+         }
+         @font-face {
+         font-family: 'Open Sans';
+         src: url('https://www.kitchenbrandstore.com/public/assets/fonts/OpenSans/OpenSans-Bold.ttf');
+         font-weight: 700;
+         font-display: swap;
+         }
+         @font-face {
+         font-family: 'Open Sans';
+         src: url('https://www.kitchenbrandstore.com/public/assets/fonts/OpenSans/OpenSans-Regular.ttf');
+         font-weight: 400;
+         font-display: swap;
+         }
+         @font-face {
+         font-family: 'Open Sans';
+         src: url('https://www.kitchenbrandstore.com/public/assets/fonts/OpenSans/OpenSans-Medium.ttf');
+         font-weight: 500;
+         font-display: swap;
+         }
+         @font-face {
+         font-family: 'Open Sans';
+         src: url('https://www.kitchenbrandstore.com/public/assets/fonts/OpenSans/OpenSans-Light.ttf');
+         font-weight: 300;
+         font-display: swap;
+         }
+      </style>
+      <!-- CSS Files -->
+
+      
+      
+      <link rel="stylesheet" href="https://www.kitchenbrandstore.com/public/assets/css/vendors.css">
+      <link rel="stylesheet" href="https://www.kitchenbrandstore.com/public/assets/css/aiz-core.css">
+      <link rel="stylesheet" href="https://www.kitchenbrandstore.com/public/assets/css/custom-style.css">
+      <link rel="stylesheet" href="https://www.kitchenbrandstore.com/public/assets/css/jquery-ui.min.css">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script> 
-        <link rel="stylesheet" href="style.css">
-
-   
-</head>
-<body>
-    <section class="aktop">
-        <div class="aktoprow1">
-            <a id="aktoprowA"href="">
-                <div class="akcity1">
-                    <h5>Delhi</h5>
-                    <h6>1344 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1">
-                    <h5>Gurugram</h5>
-                    <h6>134 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1">
-                    <h5>Ghaziabad</h5>
-                    <h6>200 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1 Mhidden">
-                    <h5>Noida</h5>
-                    <h6>34 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1 Mhidden">
-                    <h5>Chennai</h5>
-                    <h6>874 Active Sellers</h6>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="aktoprow1">
-            <a href="">
-                <div class="akcity1">
-                    <h5>Mumbai</h5>
-                    <h6>345 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1">
-                    <h5>Banglore</h5>
-                    <h6>657 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1">
-                    <h5>Manipur</h5>
-                    <h6>224 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1 Mhidden">
-                    <h5>Jaipur</h5>
-                    <h6>343 Active Sellers</h6>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="aktoprow1">
-            <a href="">
-                <div class="akcity1">
-                    <h5>Dehradun</h5>
-                    <h6>187 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1">
-                    <h5>Punjab</h5>
-                    <h6>453 Active Sellers</h6>
-                </div>
-            </a>
-            <a href="">
-                <div class="akcity1">
-                    <h5>Gujarat</h5>
-                    <h6>986 Active Sellers</h6>
-                </div>
-            </a>
-        </div>
-    </section>
-    
-
-    <section class="akfilters">
-        <div class="akcityfilter">
-            <select id="city" name="city" class="akform-select">
-                <option value="">Select City</option>
-                <option value="Alipur">Alipur</option>
-                <option value="Bawana">Bawana</option>
-                <option value="Central Delhi">Central Delhi</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Deoli">Deoli</option>
-                <option value="East Delhi">East Delhi</option>
-                <option value="Karol Bagh">Karol Bagh</option>
-                <option value="Najafgarh">Najafgarh</option>
-                <option value="Nangloi Jat">Nangloi Jat</option>
-                <option value="Narela">Narela</option>
-                <option value="New Delhi">New Delhi</option>
-                <option value="North Delhi">North Delhi</option>
-                <option value="North East Delhi">North East Delhi</option>
-                <option value="North West Delhi">North West Delhi</option>
-                <option value="Pitampura">Pitampura</option>
-                <option value="Rohini">Rohini</option>
-                <option value="South Delhi">South Delhi</option>
-                <option value="South West Delhi">South West Delhi</option>
-                <option value="West Delhi">West Delhi</option>
-            </select>
-        </div>
-
-        <div class="akcategoryfilter">
-            <select id="city" name="city" class="akform-select">
-                <option value="">Select Category</option>
-                <option value="Alipur">Accessories & Parts</option>
-                <option value="Bawana">Air Conditioners</option>
-                <option value="Central Delhi">Air Coolers</option>
-                <option value="Delhi">AirPurifier</option>
-                <option value="Deoli">Barbeque & Outdoor Grill</option>
-                <option value="East Delhi">Cookware</option>
-                <option value="Karol Bagh">Dishwasher</option>
-                <option value="Najafgarh">Fans</option>
-                <option value="Nangloi Jat">FlourMill</option>
-                <option value="Narela">Gas Stove & Hobs</option>
-                <option value="New Delhi">Health&Beauty</option>
-                <option value="North Delhi">Home Improvements</option>
-                <option value="North East Delhi">Kitchen and Bath Fixtures</option>
-                <option value="North West Delhi">Kitchen Chimney</option>
-                <option value="Pitampura">Kitchen Storage & containers</option>
-                <option value="Rohini">Oven</option>
-                <option value="South Delhi">Refrigerators</option>
-                <option value="South West Delhi">Room Heater</option>
-                <option value="West Delhi">Small Appliances</option>
-                <option value="South Delhi">TV & Videos</option>
-                <option value="South Delhi">Vacuum Cleaner</option>
-                <option value="South Delhi">Washing Machine</option>
-                <option value="South Delhi">Water Dispenser</option>
-                <option value="South Delhi">Water Heater</option>
-                <option value="South Delhi">Water Purifiers</option>
-            </select>
-        </div>
-
-        <div class="akbrandfilter">
-            <select id="city" name="city" class="akform-select">
-                <option value="">Select Brand</option>
-                <option value="Alipur">Kitchen Brand Store</option>
-                <option value="Bawana">Hindware</option>
-                <option value="Central Delhi"> Faber</option>
-                <option value="Delhi">Havells</option>
-                <option value="Deoli">Alda</option>
-                <option value="East Delhi">AO Smith</option>
-                <option value="Karol Bagh">Aquaguard</option>
-                <option value="Najafgarh">Bajaj</option>
-                <option value="Nangloi Jat">Baltra</option>
-                <option value="Narela">Black Decker</option>
-                <option value="New Delhi">Blowhot</option>
-                <option value="North Delhi">Blue Star</option>
-                <option value="North East Delhi">Borosil</option>
-                <option value="North West Delhi">Bosch</option>
-                <option value="Pitampura">Carrier</option>
-                <option value="Rohini">Carysil</option>
-                <option value="South Delhi">Catac</option>
-                <option value="South West Delhi">Cello</option>
-                <option value="West Delhi">Clix</option>
-                <option value="West Delhi">Crompton</option>
-                <option value="West Delhi">Daikin</option>
-                <option value="West Delhi">Delonghi</option>
-                <option value="West Delhi">Dinette</option>
-                <option value="West Delhi">Dubblin</option>
-                <option value="West Delhi">Dyson</option>
-                <option value="West Delhi">Elephant</option>
-                <option value="West Delhi">Elica</option>
-                <option value="West Delhi">EurekaEurodomo</option>
-                <option value="West Delhi">Franke</option>
-                <option value="West Delhi">Frendz</option>
-                <option value="West Delhi">Gem</option>
-                <option value="West Delhi">Glare</option>
-                <option value="West Delhi">Glen</option>
-                <option value="West Delhi">Godrej</option>
-                <option value="West Delhi">Greenchef</option>
-                <option value="West Delhi">Haier</option>
-                <option value="West Delhi">Hafele</option>
-                <option value="West Delhi">Hitachi</option>
-                <option value="West Delhi">Honeywell</option>
-                <option value="West Delhi">Ifb</option>
-                <option value="West Delhi">Inox</option>
-                <option value="West Delhi">Inalsa</option>
-                <option value="West Delhi">Jayna</option>
-                <option value="West Delhi">Jayco</option>
-                <option value="West Delhi">Jovees Herbal</option>
-                <option value="West Delhi">Joyo</option>
-                <option value="West Delhi">Kaff</option>
-                <option value="West Delhi">Kalsi</option>
-                <option value="West Delhi">Kapsun</option>
-                <option value="West Delhi">Kenstar</option>
-                <option value="West Delhi">Kent</option>
-                <option value="West Delhi">Kenwood</option>
-                <option value="West Delhi">Khaitan</option>
-                <option value="West Delhi">Kutchina</option>
-                <option value="West Delhi">LG</option>
-                <option value="West Delhi">Livguard</option>
-                <option value="West Delhi">Lloyd</option>
-                <option value="West Delhi">Max Star</option>
-                <option value="West Delhi">Mi</option>
-                <option value="West Delhi">Milton</option>
-                <option value="West Delhi">Mitsubishi</option>
-                <option value="West Delhi">Morphy Richards</option>
-                <option value="West Delhi">Napoleon</option>
-                <option value="West Delhi">Natraj</option>
-                <option value="West Delhi">O-General</option>
-                <option value="West Delhi">Onida</option>
-                <option value="West Delhi">Orient</option>
-                <option value="West Delhi">Orpat</option>
-                <option value="West Delhi">Ozomax</option>
-                <option value="West Delhi">Padmini</option>
-                <option value="West Delhi">Panasonic</option>
-                <option value="West Delhi">Parker knoll</option>
-                <option value="West Delhi">Philips</option>
-                <option value="West Delhi">Pigeon</option>
-                <option value="West Delhi">Prestige</option>
-                <option value="West Delhi">Princeware</option>
-                <option value="West Delhi">Racold</option>
-                <option value="West Delhi">Robam</option>
-                <option value="West Delhi">Russel Hobbs</option>
-                <option value="West Delhi">Samsung</option>
-                <option value="West Delhi">Seavy</option>
-                <option value="West Delhi">Siemens</option>
-                <option value="West Delhi">singer</option>
-                <option value="West Delhi">Skyline</option>
-                <option value="West Delhi">Sumeet</option>
-                <option value="West Delhi">Sunflame</option>
-                <option value="West Delhi">symphony</option>
-                <option value="West Delhi">Tupperware</option>
-                <option value="West Delhi">Unicef</option>
-                <option value="West Delhi">Universal</option>
-                <option value="West Delhi">Usha</option>
-                <option value="West Delhi">Varmora</option>
-                <option value="West Delhi">Vaya</option>
-                <option value="West Delhi">Vicco</option>
-                <option value="West Delhi">Videocon</option>
-                <option value="West Delhi">Vinod</option>
-                <option value="West Delhi">Vip</option>
-                <option value="West Delhi">Voltas</option>
-                <option value="West Delhi">Weber</option>
-                <option value="West Delhi">Whirlpool</option>
-                <option value="West Delhi">Winchef</option>
-                <option value="West Delhi">Wonderchef</option>
-                <option value="West Delhi">Western</option>
-                <option value="West Delhi">kohler</option>
-                <option value="West Delhi">Toshiba</option>
-                <option value="West Delhi">White Westinghouse (by electrolux)</option>
-                <option value="West Delhi">fabiano</option>
-                <option value="West Delhi">Hettich</option>
-                <option value="West Delhi">Miele</option>
-                <option value="West Delhi">atomberg</option>
-                <option value="West Delhi">Kuhl</option>
-                <option value="West Delhi">Mccoy</option>
-                <option value="West Delhi">Sujata</option>
-                <option value="West Delhi">V-Guard</option>
-                <option value="West Delhi">luminous</option>
-                <option value="West Delhi">Kelvinator</option>
-                <option value="West Delhi">Jupiter</option>
-                <option value="West Delhi">Oltao</option>
-                <option value="West Delhi">Polycab</option>
-                <option value="West Delhi">Ottomate</option>
-                <option value="West Delhi">Lifelong</option>
-                <option value="West Delhi">Novamax</option>
-                <option value="West Delhi">Candes</option>
-                <option value="West Delhi">Jbl</option>
-                <option value="West Delhi">Reffair</option>
-                <option value="West Delhi">Casa Copenhagen</option>
-                <option value="West Delhi">Harman Kardon</option>
-                <option value="West Delhi">eff4</option>
-                <option value="West Delhi">Trichup</option>
-                <option value="West Delhi">Zebion</option>
-                <option value="West Delhi">Aulten</option>
-                <option value="West Delhi">TATA</option>
-                <option value="West Delhi">HUL</option>
-                <option value="West Delhi">Treo</option>
-                <option value="West Delhi">Moda Germany</option>
-                <option value="West Delhi">Wise</option>
-                <option value="West Delhi">Trane</option>
-                <option value="West Delhi">Saint Gobain</option>
-                <option value="West Delhi">Electrolux</option>
-                <option value="West Delhi">Venus</option>
-                <option value="West Delhi">Lazer</option>
-                <option value="West Delhi">eurostar</option>
-                <option value="West Delhi">Jisulife</option>
-                <option value="West Delhi">Alstorm</option>
-                <option value="West Delhi">Cruiser</option>
-                <option value="West Delhi">Ariete</option>
-            </select>
-        </div>
-
-        <div class="aksubmitbtn">
-            <button class="aksubmit">
-                SEARCH
-            </button>
-        </div>
-    </section>
- 
-
-
-    <section class="akseller">
-     <div class="sellerheading">
-        <h2> TOP SELLERS </h2>
-        <hr>
-     </div>
-     <div class="multiple-card-slider">
-        <div id="carouselExampleControls" class="carousel carousel-c1" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Chimney Studio</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 2</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 3</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 4</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-primary sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 5</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 6</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 7</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 8</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 9</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="akcurved">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#f18407" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,149.3C384,149,480,203,576,234.7C672,267,768,277,864,245.3C960,213,1056,139,1152,96C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
-      
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  <section class="pt-5 pb-5 akbrandcard">
-     <div class="sellerheading">
-        <h2> SEARCH SELLERS BY BRANDS </h2><BR>
-        <hr>
-     </div>
-     <div class="multiple-card-slider Citem1">
-        <div id="carouselExampleControls2" class="carousel carousel-C2" data-bs-ride="carousel">
-            <div class="carousel-inner Citem1">
-                <div class="carousel-item active Citem">
-                    <div class="card akcardbody2">
-                        <div class="card-body">
-                          <div class="seller-img-2">
-                             <img class="seller-img-main-2" src="https://kbs2ibsimages.s3.ap-south-1.amazonaws.com/DevImgs/BrandLogo/Baltra.png">
-                          </div>
-                            <h5 class="card-title">Hindware</h5>
-                            <p class="card-text address">Dlf Phase III, Gurugram</p>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="card akcardbody2 Brand-card-2nd-Item">
-                       <div class="card-body">
-                          <div class="seller-img-2">
-                             <img class="seller-img-main-2" src="https://kbs2ibsimages.s3.ap-south-1.amazonaws.com/DevImgs/BrandLogo/hindware.png">
-                          </div>
-                            <h5 class="card-title">Hindware</h5>
-                            <p class="card-text address">Dlf Phase III, Gurugram</p>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                   </div>
-                </div>
-
-
-                <div class="carousel-item Citem">
-                    <div class="card akcardbody2">
-                       <div class="card-body">
-                          <div class="seller-img-2">
-                             <img class="seller-img-main-2" src="https://kbs2ibsimages.s3.ap-south-1.amazonaws.com/DevImgs/BrandLogo/faber.png">
-                          </div>
-                            <h5 class="card-title">Hindware</h5>
-                            <p class="card-text address">Dlf Phase III, Gurugram</p>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                       <div class="card akcardbody2 Brand-card-2nd-Item">
-                          <div class="card-body">
-                             <div class="seller-img-2">
-                                <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                             </div>
-                               <h5 class="card-title">Hindware</h5>
-                               <p class="card-text address">Dlf Phase III, Gurugram</p>
-                               <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                           </div>
-                       </div>
-                   </div>
-                </div>
-
-
-                <div class="carousel-item Citem">
-                    <div class="card akcardbody2">
-                       <div class="card-body">
-                          <div class="seller-img-2">
-                             <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Hindware</h5>
-                            <p class="card-text address">Dlf Phase III, Gurugram</p>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                       <div class="card akcardbody2 Brand-card-2nd-Item">
-                          <div class="card-body">
-                             <div class="seller-img-2">
-                                <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                             </div>
-                               <h5 class="card-title">Hindware</h5>
-                               <p class="card-text address">Dlf Phase III, Gurugram</p>
-                               <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                           </div>
-                       </div>
-                   </div>
-                </div>
-
-                <div class="carousel-item Citem">
-                 <div class="card akcardbody2">
-                    <div class="card-body">
-                       <div class="seller-img-2">
-                          <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                       </div>
-                         <h5 class="card-title">Hindware</h5>
-                         <p class="card-text address">Dlf Phase III, Gurugram</p>
-                         <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                     </div>
-                 </div>
-                 <div class="carousel-item">
-                    <div class="card akcardbody2 Brand-card-2nd-Item">
-                       <div class="card-body">
-                          <div class="seller-img-2">
-                             <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Hindware</h5>
-                            <p class="card-text address">Dlf Phase III, Gurugram</p>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-             </div>
-
-             <div class="carousel-item Citem">
-              <div class="card akcardbody2">
-                 <div class="card-body">
-                    <div class="seller-img-2">
-                       <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                    </div>
-                      <h5 class="card-title">Hindware</h5>
-                      <p class="card-text address">Dlf Phase III, Gurugram</p>
-                      <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+      <style>
+         body{
+         font-family: 'Open Sans', sans-serif;
+         font-weight: 400;
+         }
+         :root{
+         --primary: #e62e04;  
+         --hov-primary: #e62e04;
+         --soft-primary: rgba(230,46,4,0.15);
+         }
+         #map{
+         width: 100%;
+         height: 250px;
+         }
+         #edit_map{
+         width: 100%;
+         height: 250px;
+         }
+         .pac-container { z-index: 100000; }
+      </style>
+      </head>
+   <body>
+      <!-- aiz-main-wrapper -->
+      <div class="aiz-main-wrapper d-flex flex-column">
+         <div class="top-navbar bg-white border-bottom border-soft-secondary z-1035 h-35px h-sm-auto">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 col">
+                     <ul class="list-inline d-flex justify-content-between justify-content-lg-start mb-0">
+                     </ul>
                   </div>
-              </div>
-              <div class="carousel-item">
-                 <div class="card akcardbody2 Brand-card-2nd-Item">
-                    <div class="card-body">
-                       <div class="seller-img-2">
-                          <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                       </div>
-                         <h5 class="card-title">Hindware</h5>
-                         <p class="card-text address">Dlf Phase III, Gurugram</p>
-                         <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                     </div>
-                 </div>
-             </div>
-          </div>
-
-          <div class="carousel-item Citem">
-           <div class="card akcardbody2">
-              <div class="card-body">
-                 <div class="seller-img-2">
-                    <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                 </div>
-                   <h5 class="card-title">Hindware</h5>
-                   <p class="card-text address">Dlf Phase III, Gurugram</p>
-                   <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-               </div>
-           </div>
-           <div class="carousel-item">
-              <div class="card akcardbody2 Brand-card-2nd-Item">
-                 <div class="card-body">
-                    <div class="seller-img-2">
-                       <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                    </div>
-                      <h5 class="card-title">Hindware</h5>
-                      <p class="card-text address">Dlf Phase III, Gurugram</p>
-                      <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
+                  <div class="col-6 text-right d-none d-lg-block">
+                     <ul class="list-inline mb-0 h-100 d-flex justify-content-end align-items-center">
+                        <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
+                           <a href="tel:8930313030" class="text-reset d-inline-block opacity-60 py-2">
+                           <i class="la la-phone"></i>
+                           <span>Help line</span>  
+                           <span>8930313030</span>    
+                           </a>
+                        </li>
+                        <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
+                           <a href="https://www.kitchenbrandstore.com/users/login" class="text-reset d-inline-block opacity-60 py-2">Login</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.kitchenbrandstore.com/users/registration" class="text-reset d-inline-block py-2"><span class="opacity-60">Sign Up</span>
+                           <span class="opacity-60"></span> <span style="background-color: #e62e04;padding: 3px 7px;border-radius: 10px;font-size: 12px;color: #fff;"><b>Bonus Upto 5000</b></span>
+                           </a>
+                        </li>
+                     </ul>
                   </div>
-              </div>
-          </div>
-       </div>
-
-       <div class="carousel-item Citem">
-        <div class="card akcardbody2">
-           <div class="card-body">
-              <div class="seller-img-2">
-                 <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-              </div>
-                <h5 class="card-title">Hindware</h5>
-                <p class="card-text address">Dlf Phase III, Gurugram</p>
-                <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-            </div>
-        </div>
-        <div class="carousel-item">
-           <div class="card akcardbody2 Brand-card-2nd-Item">
-              <div class="card-body">
-                 <div class="seller-img-2">
-                    <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                 </div>
-                   <h5 class="card-title">Hindware</h5>
-                   <p class="card-text address">Dlf Phase III, Gurugram</p>
-                   <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
                </div>
-           </div>
-       </div>
-    </div>
-
-    <div class="carousel-item Citem">
-     <div class="card akcardbody2">
-        <div class="card-body">
-           <div class="seller-img-2">
-              <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-           </div>
-             <h5 class="card-title">Hindware</h5>
-             <p class="card-text address">Dlf Phase III, Gurugram</p>
-             <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
+            </div>
          </div>
-     </div>
-     <div class="carousel-item">
-        <div class="card akcardbody2 Brand-card-2nd-Item">
-           <div class="card-body">
-              <div class="seller-img-2">
-                 <img class="seller-img-main-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-              </div>
-                <h5 class="card-title">Hindware</h5>
-                <p class="card-text address">Dlf Phase III, Gurugram</p>
-                <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
+         <!-- END Top Bar -->
+         <header class=" sticky-top  z-1020 bg-white border-bottom shadow-sm">
+            <div class="position-relative logo-bar-area z-1">
+               <div class="container">
+                  <div class="d-flex align-items-center">
+                     <div class="col-auto col-xl-3 pl-0 pr-3 d-flex align-items-center">
+                        <a class="d-block py-20px mr-3 ml-0" href="https://www.kitchenbrandstore.com">
+                        <img src="https://kbs2ibsimages.s3.ap-south-1.amazonaws.com/uploads/all/yhaAecXoL9H0HyjIzVHKcXB6btc9VSAUTOfYnAof.webp" alt="Kitchen Brand Store" class="mw-100 h-30px h-md-40px" height="40">
+                        </a>
+                        <div class="d-none d-xl-block align-self-stretch category-menu-icon-box ml-auto mr-0">
+                           <div class="h-100 d-flex align-items-center" id="category-menu-icon">
+                              <div class="dropdown-toggle navbar-light bg-light h-40px w-50px pl-2 rounded border c-pointer">
+                                 <span class="navbar-toggler-icon"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="d-lg-none ml-auto mr-0">
+                        <a href="https://www.kitchenbrandstore.com/users/registration" class="" style="display:inline-block;overflow: hidden;position: absolute;top: 23px;right: 90px;color: gray;">Sign Up
+                        &amp; <span style="background-color: #e62e04;padding: 3px 7px;border-radius: 10px;font-size: 12px;color: #fff;"><b>Bonus Upto 5000</b></span>
+                        </a>
+                        <a class="p-2 d-block1 text-reset" style="display:inline-block;" href="javascript:void(0);" data-toggle="class-toggle" data-target=".front-header-search">
+                        <i class="las la-search la-flip-horizontal la-2x"></i>
+                        </a>
+                     </div>
+                     <div class="flex-grow-1 front-header-search d-flex align-items-center bg-white">
+                        <div class="position-relative flex-grow-1">
+                           <form action="https://www.kitchenbrandstore.com/search" method="GET" class="stop-propagation">
+                              <div class="d-flex position-relative align-items-center">
+                                 <div class="d-lg-none" data-toggle="class-toggle" data-target=".front-header-search">
+                                    <button class="btn px-2" type="button"><i class="la la-2x la-long-arrow-left"></i></button>
+                                 </div>
+                                 <div class="input-group">
+                                    <input type="text" class="border-0 border-lg form-control" id="search" name="keyword" placeholder="I am shopping for..." autocomplete="off">
+                                    <div class="input-group-append d-none d-lg-block">
+                                       <button class="btn btn-primary" type="submit">
+                                       <i class="la la-search la-flip-horizontal fs-18"></i>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <div class="typed-search-box stop-propagation document-click-d-none d-none bg-white rounded shadow-lg position-absolute left-0 top-100 w-100" style="min-height: 200px">
+                              <div class="search-preloader absolute-top-center">
+                                 <div class="dot-loader">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                 </div>
+                              </div>
+                              <div class="search-nothing d-none p-3 text-center fs-16">
+                              </div>
+                              <div id="search-content" class="text-left">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="d-none d-lg-none ml-3 mr-0">
+                        <div class="nav-search-box">
+                           <a href="#" class="nav-box-link">
+                           <i class="la la-search la-flip-horizontal d-inline-block nav-box-icon"></i>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="d-none d-lg-block ml-3 mr-0">
+                        <div class="" id="compare">
+                           <a href="https://www.kitchenbrandstore.com/compare" class="d-flex align-items-center text-reset">
+                           <i class="la la-refresh la-2x opacity-80"></i>
+                           <span class="flex-grow-1 ml-1">
+                           <span class="badge badge-primary badge-inline badge-pill">0</span>
+                           <span class="nav-box-text d-none d-xl-block opacity-70">Compare</span>
+                           </span>
+                           </a>                    
+                        </div>
+                     </div>
+                     <div class="d-none d-lg-block ml-3 mr-0">
+                        <div class="" id="wishlist">
+                           <a href="https://www.kitchenbrandstore.com/wishlists" class="d-flex align-items-center text-reset">
+                           <i class="la la-heart-o la-2x opacity-80"></i>
+                           <span class="flex-grow-1 ml-1">
+                           <span class="badge badge-primary badge-inline badge-pill">0</span>
+                           <span class="nav-box-text d-none d-xl-block opacity-70">Wishlist</span>
+                           </span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="d-none d-lg-block  align-self-stretch ml-3 mr-0" data-hover="dropdown">
+                        <div class="nav-cart-box dropdown h-100" id="cart_items">
+                           <a href="javascript:void(0)" class="d-flex align-items-center text-reset h-100" data-toggle="dropdown" data-display="static">
+                           <i class="la la-shopping-cart la-2x opacity-80"></i>
+                           <span class="flex-grow-1 ml-1">
+                           <span class="badge badge-primary badge-inline badge-pill cart-count">0</span>
+                           <span class="nav-box-text d-none d-xl-block opacity-70">Cart</span>
+                           </span>
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg p-0 stop-propagation">
+                              <div class="text-center p-3">
+                                 <i class="las la-frown la-3x opacity-60 mb-3"></i>
+                                 <h3 class="h6 fw-700">Your Cart is empty</h3>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="hover-category-menu position-absolute w-100 top-100 left-0 right-0 d-none z-3" id="hover-category-menu">
+                  <div class="container">
+                     <div class="row gutters-10 position-relative">
+                        <div class="col-lg-3 position-static">
+                           <div class="aiz-category-menu bg-white rounded  shadow-lg" id="category-sidebar">
+                              <div class="p-3 bg-soft-primary d-none d-lg-block rounded-top all-category position-relative text-left">
+                                 <span class="fw-600 fs-16 mr-3">Categories</span>
+                                 <a href="https://www.kitchenbrandstore.com/categories" class="text-reset">
+                                 <span class="d-none d-lg-inline-block">See All &gt;</span>
+                                 </a>
+                              </div>
+                              <ul class="list-unstyled categories no-scrollbar py-2 mb-0 text-left">
+                                 <li class="category-nav-element" data-id="1">
+                                    <a href="https://www.kitchenbrandstore.com/category/home-kitchen" class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60" src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" data-src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" width="16" alt="Home &amp; Kitchen" onerror="this.onerror=null;this.src='https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Home &amp; Kitchen</span>
+                                    </a>
+                                    <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
+                                       <div class="c-preloader text-center absolute-center">
+                                          <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="category-nav-element" data-id="13">
+                                    <a href="https://www.kitchenbrandstore.com/category/air-coolers" class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60" src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" data-src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" width="16" alt="Air Coolers" onerror="this.onerror=null;this.src='https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Air Coolers</span>
+                                    </a>
+                                 </li>
+                                 <li class="category-nav-element" data-id="15">
+                                    <a href="https://www.kitchenbrandstore.com/category/refrigerators" class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60" src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" data-src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" width="16" alt="Refrigerators" onerror="this.onerror=null;this.src='https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Refrigerators</span>
+                                    </a>
+                                 </li>
+                                 <li class="category-nav-element" data-id="17">
+                                    <a href="https://www.kitchenbrandstore.com/category/washing-machine" class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60" src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" data-src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" width="16" alt="Washing Machine" onerror="this.onerror=null;this.src='https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Washing Machine</span>
+                                    </a>
+                                 </li>
+                                 <li class="category-nav-element" data-id="25">
+                                    <a href="https://www.kitchenbrandstore.com/category/air-conditioners" class="text-truncate text-reset py-2 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60" src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" data-src="https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg" width="16" alt="Air Conditioners" onerror="this.onerror=null;this.src='https://www.kitchenbrandstore.com/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name">Air Conditioners</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
- </div>
+            <div class="bg-white border-top border-gray-200 py-1">
+               <div class="container">
+                  <ul class="list-inline mb-0 pl-0 mobile-hor-swipe text-center">
+                     <li class="list-inline-item mr-0">
+                        <a href="https://www.kitchenbrandstore.com/flash-deals" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
+                        Flash Sale
+                        </a>
+                     </li>
+                     <li class="list-inline-item mr-0">
+                        <a href="https://www.kitchenbrandstore.com/blog" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
+                        Blogs
+                        </a>
+                     </li>
+                     <li class="list-inline-item mr-0">
+                        <a href="https://www.kitchenbrandstore.com/brands" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
+                        All Brands
+                        </a>
+                     </li>
+                     <li class="list-inline-item mr-0">
+                        <a href="https://www.kitchenbrandstore.com/categories" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
+                        All categories
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </header>
+         <style>
+            .ui-autocomplete{
+            width: 436.15px!important;
+            height: 400px!important;
+            overflow: auto!important;
+            position: fixed!important;
+            z-index: 999999!important;
+            }
+            /*.carousel-aspect {
+            aspect-ratio: 1/1;
+            }
+            .product-gallery img {
+            width: 100%!important;
+            height: auto!important;
+            }*/
+            .product-gallery {
+            aspect-ratio: 1/1;
+            }
+            .topproduct {
+            aspect-ratio: 1/1;
+            }
+            .related_products {
+            height: 350px!important;
+            }
+            @media  only screen and (max-width: 768px) {
+            .product-gallery-thumb .carousel-aspect {
+            aspect-ratio: 1/1;
+            }
+            .product-gallery {
+            aspect-ratio: 1/1;
+            }
+            .product-gallery img {
+            width: 100%!important;
+            height: auto!important;
+            }
+            .product-gallery-thumb {
+            height: 115px!important;
+            }
+            .product-gallery-thumb .carousel-aspect {
+            aspect-ratio: 1/1;
+            }
+            .product-gallery-thumb img {
+            width: 95px!important;
+            height: 95px!important;
+            object-fit: cover;
+            }
+            .related_products {
+            height: 290px!important;
+            }
+            .related_blogs {
+            height: 220px!important;
+            }
+            }
+            /*.slick-slide img {
+            width: 100%!important;
+            }
+            .carousel-aspect img {
+            width: 100%!important;
+            height: auto!important;
+            }*/
+            .review-star i {
+            font-size: 15px !important;
+            margin-right: 3px;
+            }
+            .review-star i {
+            color: #c7c7c7;
+            }
+            .review-star i.active {
+            color: #FF6329;
+            }
+            /* star rating */
+            .rating-error {
+            display: none;
+            margin-top: -20px;
+            color: red;
+            font-size: 15px!important;
+            font-weight: 600!important;
+            }
+            .star-cb-group {
+            font-size: 0;
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            margin-top: -10px;
+            }
+            .star-cb-group * {
+            font-size: 24px;
+            }
+            .star-cb-group > input {
+            width: 0;
+            height: 0;
+            }
+            .star-cb-group > input + label {
+            display: inline-block;
+            overflow: hidden;
+            text-indent: 9999px;
+            width: 1em;
+            white-space: nowrap;
+            cursor: pointer;
+            margin-right: 8px;
+            }
+            .star-cb-group > input + label:before {
+            display: inline-block;
+            text-indent: -9999px;
+            font-family: 'Line Awesome Free';
+            content: "\f005";
+            color: #c7c7c7;
+            }
+            .star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
+            font-family: 'Line Awesome Free';
+            content: "\f005";
+            color: #FF6329;
+            text-shadow: 0 0 1px #333;
+            }
+            .star-cb-group > .star-cb-clear + label {
+            text-indent: -9999px;
+            width: .5em;
+            margin-left: -.5em;
+            }
+            .star-cb-group > .star-cb-clear + label:before {
+            width: .5em;
+            }
+            .star-cb-group:hover > input + label:before {
+            font-family: 'Line Awesome Free';
+            content: "\f005";
+            color: #c7c7c7;
+            text-shadow: none;
+            }
+            .star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
+            font-family: 'Line Awesome Free';
+            content: "\f005";
+            color: #FF6329;
+            text-shadow: 0 0 1px #333;
+            }
+            /* star rating end */
+         </style>
+         <section class="MainContent">
+         
+            <section class="aktop">
+               <div class="aktoprow1">
+                   <a id="aktoprowA"href="">
+                       <div class="akcity1">
+                           <h5>Delhi</h5>
+                           <h6>1344 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Gurugram</h5>
+                           <h6>134 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Ghaziabad</h5>
+                           <h6>200 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1 Mhidden">
+                           <h5>Noida</h5>
+                           <h6>34 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1 Mhidden">
+                           <h5>Chennai</h5>
+                           <h6>874 Active Sellers</h6>
+                       </div>
+                   </a>
+               </div>
+       
+       
+               <div class="aktoprow1">
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Mumbai</h5>
+                           <h6>345 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Banglore</h5>
+                           <h6>657 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Manipur</h5>
+                           <h6>224 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1 Mhidden">
+                           <h5>Jaipur</h5>
+                           <h6>343 Active Sellers</h6>
+                       </div>
+                   </a>
+               </div>
+       
+       
+               <div class="aktoprow1">
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Dehradun</h5>
+                           <h6>187 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Punjab</h5>
+                           <h6>453 Active Sellers</h6>
+                       </div>
+                   </a>
+                   <a href="">
+                       <div class="akcity1">
+                           <h5>Gujarat</h5>
+                           <h6>986 Active Sellers</h6>
+                       </div>
+                   </a>
+               </div>
+           </section>
+           
+       
+           <section class="akfilters">
+               <div class="akcityfilter">
+                   <select id="city" name="city" class="akform-select">
+                       <option value="">Select City</option>
+                       <option value="Alipur">Alipur</option>
+                       <option value="Bawana">Bawana</option>
+                       <option value="Central Delhi">Central Delhi</option>
+                       <option value="Delhi">Delhi</option>
+                       <option value="Deoli">Deoli</option>
+                       <option value="East Delhi">East Delhi</option>
+                       <option value="Karol Bagh">Karol Bagh</option>
+                       <option value="Najafgarh">Najafgarh</option>
+                       <option value="Nangloi Jat">Nangloi Jat</option>
+                       <option value="Narela">Narela</option>
+                       <option value="New Delhi">New Delhi</option>
+                       <option value="North Delhi">North Delhi</option>
+                       <option value="North East Delhi">North East Delhi</option>
+                       <option value="North West Delhi">North West Delhi</option>
+                       <option value="Pitampura">Pitampura</option>
+                       <option value="Rohini">Rohini</option>
+                       <option value="South Delhi">South Delhi</option>
+                       <option value="South West Delhi">South West Delhi</option>
+                       <option value="West Delhi">West Delhi</option>
+                   </select>
+               </div>
+       
+               <div class="akcategoryfilter">
+                   <select id="city" name="city" class="akform-select">
+                       <option value="">Select Category</option>
+                       <option value="Alipur">Accessories & Parts</option>
+                       <option value="Bawana">Air Conditioners</option>
+                       <option value="Central Delhi">Air Coolers</option>
+                       <option value="Delhi">AirPurifier</option>
+                       <option value="Deoli">Barbeque & Outdoor Grill</option>
+                       <option value="East Delhi">Cookware</option>
+                       <option value="Karol Bagh">Dishwasher</option>
+                       <option value="Najafgarh">Fans</option>
+                       <option value="Nangloi Jat">FlourMill</option>
+                       <option value="Narela">Gas Stove & Hobs</option>
+                       <option value="New Delhi">Health&Beauty</option>
+                       <option value="North Delhi">Home Improvements</option>
+                       <option value="North East Delhi">Kitchen and Bath Fixtures</option>
+                       <option value="North West Delhi">Kitchen Chimney</option>
+                       <option value="Pitampura">Kitchen Storage & containers</option>
+                       <option value="Rohini">Oven</option>
+                       <option value="South Delhi">Refrigerators</option>
+                       <option value="South West Delhi">Room Heater</option>
+                       <option value="West Delhi">Small Appliances</option>
+                       <option value="South Delhi">TV & Videos</option>
+                       <option value="South Delhi">Vacuum Cleaner</option>
+                       <option value="South Delhi">Washing Machine</option>
+                       <option value="South Delhi">Water Dispenser</option>
+                       <option value="South Delhi">Water Heater</option>
+                       <option value="South Delhi">Water Purifiers</option>
+                   </select>
+               </div>
+       
+               <div class="akbrandfilter">
+                   <select id="city" name="city" class="akform-select">
+                       <option value="">Select Brand</option>
+                       <option value="Alipur">Kitchen Brand Store</option>
+                       <option value="Bawana">Hindware</option>
+                       <option value="Central Delhi"> Faber</option>
+                       <option value="Delhi">Havells</option>
+                       <option value="Deoli">Alda</option>
+                       <option value="East Delhi">AO Smith</option>
+                       <option value="Karol Bagh">Aquaguard</option>
+                       <option value="Najafgarh">Bajaj</option>
+                       <option value="Nangloi Jat">Baltra</option>
+                       <option value="Narela">Black Decker</option>
+                       <option value="New Delhi">Blowhot</option>
+                       <option value="North Delhi">Blue Star</option>
+                       <option value="North East Delhi">Borosil</option>
+                       <option value="North West Delhi">Bosch</option>
+                       <option value="Pitampura">Carrier</option>
+                       <option value="Rohini">Carysil</option>
+                       <option value="South Delhi">Catac</option>
+                       <option value="South West Delhi">Cello</option>
+                       <option value="West Delhi">Clix</option>
+                       <option value="West Delhi">Crompton</option>
+                       <option value="West Delhi">Daikin</option>
+                       <option value="West Delhi">Delonghi</option>
+                       <option value="West Delhi">Dinette</option>
+                       <option value="West Delhi">Dubblin</option>
+                       <option value="West Delhi">Dyson</option>
+                       <option value="West Delhi">Elephant</option>
+                       <option value="West Delhi">Elica</option>
+                       <option value="West Delhi">EurekaEurodomo</option>
+                       <option value="West Delhi">Franke</option>
+                       <option value="West Delhi">Frendz</option>
+                       <option value="West Delhi">Gem</option>
+                       <option value="West Delhi">Glare</option>
+                       <option value="West Delhi">Glen</option>
+                       <option value="West Delhi">Godrej</option>
+                       <option value="West Delhi">Greenchef</option>
+                       <option value="West Delhi">Haier</option>
+                       <option value="West Delhi">Hafele</option>
+                       <option value="West Delhi">Hitachi</option>
+                       <option value="West Delhi">Honeywell</option>
+                       <option value="West Delhi">Ifb</option>
+                       <option value="West Delhi">Inox</option>
+                       <option value="West Delhi">Inalsa</option>
+                       <option value="West Delhi">Jayna</option>
+                       <option value="West Delhi">Jayco</option>
+                       <option value="West Delhi">Jovees Herbal</option>
+                       <option value="West Delhi">Joyo</option>
+                       <option value="West Delhi">Kaff</option>
+                       <option value="West Delhi">Kalsi</option>
+                       <option value="West Delhi">Kapsun</option>
+                       <option value="West Delhi">Kenstar</option>
+                       <option value="West Delhi">Kent</option>
+                       <option value="West Delhi">Kenwood</option>
+                       <option value="West Delhi">Khaitan</option>
+                       <option value="West Delhi">Kutchina</option>
+                       <option value="West Delhi">LG</option>
+                       <option value="West Delhi">Livguard</option>
+                       <option value="West Delhi">Lloyd</option>
+                       <option value="West Delhi">Max Star</option>
+                       <option value="West Delhi">Mi</option>
+                       <option value="West Delhi">Milton</option>
+                       <option value="West Delhi">Mitsubishi</option>
+                       <option value="West Delhi">Morphy Richards</option>
+                       <option value="West Delhi">Napoleon</option>
+                       <option value="West Delhi">Natraj</option>
+                       <option value="West Delhi">O-General</option>
+                       <option value="West Delhi">Onida</option>
+                       <option value="West Delhi">Orient</option>
+                       <option value="West Delhi">Orpat</option>
+                       <option value="West Delhi">Ozomax</option>
+                       <option value="West Delhi">Padmini</option>
+                       <option value="West Delhi">Panasonic</option>
+                       <option value="West Delhi">Parker knoll</option>
+                       <option value="West Delhi">Philips</option>
+                       <option value="West Delhi">Pigeon</option>
+                       <option value="West Delhi">Prestige</option>
+                       <option value="West Delhi">Princeware</option>
+                       <option value="West Delhi">Racold</option>
+                       <option value="West Delhi">Robam</option>
+                       <option value="West Delhi">Russel Hobbs</option>
+                       <option value="West Delhi">Samsung</option>
+                       <option value="West Delhi">Seavy</option>
+                       <option value="West Delhi">Siemens</option>
+                       <option value="West Delhi">singer</option>
+                       <option value="West Delhi">Skyline</option>
+                       <option value="West Delhi">Sumeet</option>
+                       <option value="West Delhi">Sunflame</option>
+                       <option value="West Delhi">symphony</option>
+                       <option value="West Delhi">Tupperware</option>
+                       <option value="West Delhi">Unicef</option>
+                       <option value="West Delhi">Universal</option>
+                       <option value="West Delhi">Usha</option>
+                       <option value="West Delhi">Varmora</option>
+                       <option value="West Delhi">Vaya</option>
+                       <option value="West Delhi">Vicco</option>
+                       <option value="West Delhi">Videocon</option>
+                       <option value="West Delhi">Vinod</option>
+                       <option value="West Delhi">Vip</option>
+                       <option value="West Delhi">Voltas</option>
+                       <option value="West Delhi">Weber</option>
+                       <option value="West Delhi">Whirlpool</option>
+                       <option value="West Delhi">Winchef</option>
+                       <option value="West Delhi">Wonderchef</option>
+                       <option value="West Delhi">Western</option>
+                       <option value="West Delhi">kohler</option>
+                       <option value="West Delhi">Toshiba</option>
+                       <option value="West Delhi">White Westinghouse (by electrolux)</option>
+                       <option value="West Delhi">fabiano</option>
+                       <option value="West Delhi">Hettich</option>
+                       <option value="West Delhi">Miele</option>
+                       <option value="West Delhi">atomberg</option>
+                       <option value="West Delhi">Kuhl</option>
+                       <option value="West Delhi">Mccoy</option>
+                       <option value="West Delhi">Sujata</option>
+                       <option value="West Delhi">V-Guard</option>
+                       <option value="West Delhi">luminous</option>
+                       <option value="West Delhi">Kelvinator</option>
+                       <option value="West Delhi">Jupiter</option>
+                       <option value="West Delhi">Oltao</option>
+                       <option value="West Delhi">Polycab</option>
+                       <option value="West Delhi">Ottomate</option>
+                       <option value="West Delhi">Lifelong</option>
+                       <option value="West Delhi">Novamax</option>
+                       <option value="West Delhi">Candes</option>
+                       <option value="West Delhi">Jbl</option>
+                       <option value="West Delhi">Reffair</option>
+                       <option value="West Delhi">Casa Copenhagen</option>
+                       <option value="West Delhi">Harman Kardon</option>
+                       <option value="West Delhi">eff4</option>
+                       <option value="West Delhi">Trichup</option>
+                       <option value="West Delhi">Zebion</option>
+                       <option value="West Delhi">Aulten</option>
+                       <option value="West Delhi">TATA</option>
+                       <option value="West Delhi">HUL</option>
+                       <option value="West Delhi">Treo</option>
+                       <option value="West Delhi">Moda Germany</option>
+                       <option value="West Delhi">Wise</option>
+                       <option value="West Delhi">Trane</option>
+                       <option value="West Delhi">Saint Gobain</option>
+                       <option value="West Delhi">Electrolux</option>
+                       <option value="West Delhi">Venus</option>
+                       <option value="West Delhi">Lazer</option>
+                       <option value="West Delhi">eurostar</option>
+                       <option value="West Delhi">Jisulife</option>
+                       <option value="West Delhi">Alstorm</option>
+                       <option value="West Delhi">Cruiser</option>
+                       <option value="West Delhi">Ariete</option>
+                   </select>
+               </div>
+       
+               <div class="aksubmitbtn">
+                   <button class="aksubmit">
+                       SEARCH
+                   </button>
+               </div>
+           </section>
+        
+       
+       
+           <section class="pt-5 pb-5 akseller">
+            <div class="sellerheading">
+               <h2> TOP SELLERS </h2>
+               <hr>
+            </div>
+            <div class="akcarousel1">
+                   <div class="slider owl-carousel">
+                       <div class="ak-seller-card">
+                          <div class="ak-img">
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                          </div>
+                          <div class="content">
+                             <div class="title">
+                                Briana Tozour
+                                <div class="midsection">
+                                   <div class="akselleraddress">
+                                       <h3>DLF Phase III, Gurgaon</h3>
+                                   </div>
+           
+                                   <div class="aknew">
+                                       <span class="aknewtext">New</span>
+                                   </div>
+                                </div>
+                                <div class="akratings">
+                                   <h4>4.5</h4>
+                                      <ul class="akstars">
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                      </ul>
+                                 
+                                </div>
+                             </div>
+       
+                             <div class="btn">
+                                <button>Read more</button>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="ak-seller-card">
+                          <div class="ak-img">
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                          </div>
+                          <div class="content">
+                             <div class="title">
+                                Pricilla Preez
+                             </div>
+                             <div class="sub-title">
+                                Web Developer
+                                <div class="midsection">
+                                   <div class="akselleraddress">
+                                       <h3>DLF Phase III, Gurgaon</h3>
+                                   </div>
+           
+                                   <div class="aknew">
+                                       <span class="aknewtext">New</span>
+                                   </div>
+                                </div>
+                                <div class="akratings">
+                                   <h4>4.5</h4>
+                                      <ul class="akstars">
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                      </ul>
+                                   
+                                </div>
+                             </div>
+                             <div class="btn">
+                                <button>Read more</button>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="ak-seller-card">
+                        <div class="ak-img">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                        </div>
+                        <div class="content">
+                           <div class="title">
+                              Eliana Maia
+                              <div class="midsection">
+                                 <div class="akselleraddress">
+                                     <h3>DLF Phase III, Gurgaon</h3>
+                                 </div>
+         
+                                 <div class="aknew">
+                                     <span class="aknewtext">New</span>
+                                 </div>
+                              </div>
+                              <div class="akratings">
+                                 <h4>4.5</h4>
+                                    <ul class="akstars">
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star inactive"></i></li>
+                                       <li><i class="fa-solid fa-star inactive"></i></li>
+                                    </ul>
+                                 
+                              </div>
+                           </div>
+                           <div class="btn">
+                              <button>Read more</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ak-seller-card">
+                        <div class="ak-img">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                        </div>
+                        <div class="content">
+                           <div class="title">
+                              Eliana Maia
+                              <div class="midsection">
+                                 <div class="akselleraddress">
+                                     <h3>DLF Phase III, Gurgaon</h3>
+                                 </div>
+         
+                                 <div class="aknew">
+                                     <span class="aknewtext">New</span>
+                                 </div>
+                              </div>
+                              <div class="akratings">
+                                 <h4>4.5</h4>
+                                    <ul class="akstars">
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star inactive"></i></li>
+                                       <li><i class="fa-solid fa-star inactive"></i></li>
+                                    </ul>
+                                 
+                              </div>
+                           </div>
+                           <div class="btn">
+                              <button>Read more</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ak-seller-card">
+                        <div class="ak-img">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                        </div>
+                        <div class="content">
+                           <div class="title">
+                              Eliana Maia
+                              <div class="midsection">
+                                 <div class="akselleraddress">
+                                     <h3>DLF Phase III, Gurgaon</h3>
+                                 </div>
+         
+                                 <div class="aknew">
+                                     <span class="aknewtext">New</span>
+                                 </div>
+                              </div>
+                              <div class="akratings">
+                                 <h4>4.5</h4>
+                                    <ul class="akstars">
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star star"></i></li>
+                                       <li><i class="fa-solid fa-star inactive"></i></li>
+                                       <li><i class="fa-solid fa-star inactive"></i></li>
+                                    </ul>
+                                 
+                              </div>
+                           </div>
+                           <div class="btn">
+                              <button>Read more</button>
+                           </div>
+                        </div>
+                     </div>
+                       <div class="ak-seller-card">
+                          <div class="ak-img">
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                          </div>
+                          <div class="content">
+                             <div class="title">
+                                Eliana Maia
+                                <div class="midsection">
+                                   <div class="akselleraddress">
+                                       <h3>DLF Phase III, Gurgaon</h3>
+                                   </div>
+           
+                                   <div class="aknew">
+                                       <span class="aknewtext">New</span>
+                                   </div>
+                                </div>
+                                <div class="akratings">
+                                   <h4>4.5</h4>
+                                      <ul class="akstars">
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                      </ul>
+                                   
+                                </div>
+                             </div>
+                             <div class="btn">
+                                <button>Read more</button>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="ak-seller-card">
+                           <div class="ak-img">
+                              <img src="" alt="">
+                           </div>
+                           <div class="content">
+                              <div class="title">
+                                 Eliana Maia
+                                 <div class="midsection">
+                                   <div class="akselleraddress">
+                                       <h3>DLF Phase III, Gurgaon</h3>
+                                   </div>
+           
+                                   <div class="aknew">
+                                       <span class="aknewtext">New</span>
+                                   </div>
+                                </div>
+                                <div class="akratings">
+                                   <h4>4.5</h4>
+                                      <ul class="akstars">
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star star"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                         <li><i class="fa-solid fa-star inactive"></i></li>
+                                      </ul>
+                                   
+                                </div>
+                             </div>
+                              <div class="btn">
+                                 <button>Read more</button>
+                              </div>
+                           </div>
+                        </div> 
+                    </div>
+               </div>
+           </section>
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           <div class="akcurved">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                   <path fill="#f18407" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,149.3C384,149,480,203,576,234.7C672,267,768,277,864,245.3C960,213,1056,139,1152,96C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+               </svg>
            </div>
-            <button class="carousel-control-prev prev-2" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next next-2" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-  </section>
-  
-
-
-
-
-
-  <section class="akcategory">
-     <div class="sellerheading">
-        <h4>SEARCH SELLERS BY CATEGORY</h4>
-        <hr>
-     </div>
-     <div class="filters">
-        <a href=""><div class="box box1">Filter 1</div></a>   
-        <a href=""><div class="box box1">Filter 2</div></a>
-        <a href=""><div class="box box1">Filter 3</div></a>
-        <a href=""><div class="box box1">Filter 4</div></a>
-     </div>
-     <div class="multiple-card-slider">
-        <div id="carouselExampleControls3" class="carousel carousel-c1" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Chimney Studio</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 2</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 3</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 4</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-primary sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 5</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 6</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 7</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 8</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card akCardBody">
-                        <div class="card-body">
-                          <div class="seller-img">
-                             <img class="seller-img-main"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHCkQ4FlKqbSLej6CKBqdKWfsB1riu1lQqg&usqp=CAU">
-                          </div>
-                            <h5 class="card-title">Card title 9</h5>
-                            <div class="midsection">
-                             <div class="akselleraddress">
-                                 <h3>DLF Phase III, Gurgaon</h3>
-                             </div>
-     
-                             <div class="aknew">
-                                 <span class="aknewtext">New</span>
-                             </div>
-                          </div>
-                          <div class="akratings">
-                             <h4>4.5</h4>
-                                <ul class="akstars">
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star star"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                   <li><i class="fa-solid fa-star inactive"></i></li>
-                                </ul>
-                             <h5>5+ ratings</h5>
-                          </div>
-                            <a href="#" class="btn btn-warning sellerBtn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+             
+       
+           
+           
+           
+           
+           
+           
+           
+           
+           
+         <section class="pt-5 pb-5 akbrandcard">
+           <div class="sellerheading">
+               <h2> TOP SELLERS </h2>
+               <hr>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-  </section>    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-      
-</body>
+            <div class="akcarousel1">
+                   <div class="slider2 owl-carousel">
+                       <div class="ak-seller-card">
+                          <div class="ak-img">
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                          </div>
+                          <div class="content">
+                             <div class="title">
+                                Hindware<br>
+                                <h6>Gurugram</h6>
+                             </div>
+       
+                             <div class="btn">
+                                <button class="btn-seller-carousel">Read more</button>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="ak-seller-card">
+                          <div class="ak-img">
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                          </div>
+                          <div class="content">
+                           <div class="title">
+                               Hindware<br>
+                               <h6>Gurugram</h6>
+                            </div>
+                             <div class="btn">
+                                <button class="btn-seller-carousel">Read more</button>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="ak-seller-card">
+                          <div class="ak-img">
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                          </div>
+                          <div class="content">
+                           <div class="title">
+                               Hindware<br>
+                               <h6>Gurugram</h6>
+                            </div>
+                             <div class="btn">
+                                <button class="btn-seller-carousel">Read more</button>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="ak-seller-card">
+                         <div class="ak-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ901ZZqcgKjLmf62l5uJTT3VPnFmeOnxKt_g&usqp=CAU" alt="">
+                         </div>
+                         <div class="content">
+                          <div class="title">
+                              Hindware<br>
+                              <h6>Gurugram</h6>
+                           </div>
+                            <div class="btn">
+                               <button class="btn-seller-carousel">Read more</button>
+                            </div>
+                         </div>
+                      </div>
+                       <div class="ak-seller-card">
+                           <div class="ak-img">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADGCAMAAADFYc2jAAABGlBMVEX//////v/7///8//35///lMznznKD+7/D///3//f/kMzPlEhztc3DkKy/9/v/mICLxnZP///n+7+nnNEDjJizqSUfvk4zweXriAAD0p6noLzXwi4XkGiTtfn7lChHmJyfpAAD96Oj3vbryrKjeAAD59PX4+OjgCxToZmXrJzP1//r95OHgNjbznZnlPz/pe3DpSk7oVVX2q6D52tHqRlXuYmP50M/wo5X87/XwgobsbnD24Obzpp/1wsXzr672xb3lWF3ncGXwlJf34tPxys/uYVTrABzuU17nT0/4enLfMCn79d/4tb3mMEblW1neITPrjoPyv6/xg5H2tbjvzLfrcXzlRTTbNj3niIH7qpjxMkLwa13iUETieXXldG8tAAAM7klEQVR4nO2ae1vbxraHR3PBGskaZSQBZjyWMEax5QvguDiBwyVJW4eydyHddDc9NPn+X+MsyaZxTtKTppg8u89Z7z+ALI3nN2vNuowgBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBHkgXO5qxahSjnvvofpSu0o6VOpVzOyrwKSjmcsdqe49FEgnrsupI/kKJvZ1AN0Ok5Jpeu+hXMlL0yvtyhVM7OsgeZ8r7cCc7+38kvY5YVrqv4/vE7UVHxyMI+WuwPuj+OIgfsKle39P+lqwl2lgkxq7v3iQ30iS9BHEgBWM9ZVw13xReKV8595jRakRPspH+X8XUL4wlXwoWT6b/JyP7ymvOPOl+3L5DvDJIkERl7H5b9J5wOV8L98hjvpMAoDSuJzZx5era+rL5bsg8pNLXg45H8bVf3DLSngvX93J+GOUIz/eInfi/4r1wZVY/5OfgEPNhwHx7sPpX3J+xT63zky7H4UIKPTvHvty+VJx+knnhxHV/AOHwi33j0t/wHv50KfU2p+5uVb7xETcvJZXihfyvwBda+efXPFaLb9bRbdde8AqupIfucSdNHsX3xy2ptp1GDQBZOdJZ6vjSDp5era19YwzPT06PDjobU61KvcjoQx6JXjs6PD5wfj4pM1klAZi9uS/nm5tjXK26Hqdfn7SOTntz9sgcGM6XTvrjKDNjs6P6s9ffTN+8fJbaJShV+Cs0zk7+c5x+Hn9lehACwU3deqH3xxcvRi1mepLqVfdTFXWFxFtf9/wbZAU3e0XA8KZw/lvjbRRME7XGt00bbuDw4afXF8nfqM3obzs6yWswem44YeFCWwabvQjPzHpk++2/VnjRtPKTyCub237jeHAna8GZeRVY7Z7oXVbbIdhlgXwaONFW8EOkjpN/e2m0j/s+snuGSxx7WWYhtYrsrCbtnLYnQ5fcRQo5QeePrU2tmFobsVtcXnOoQvmx/aNiRlTW7A+QW2ShSIJw0QIz6bn1KEEbpKj7UyIwlq/uDR+7x8zYfxRfpF5aZMtDMXyuu+J9JTwxWo8tpkX7hDyz9QkFp60yTC2l1MqNdPG3Nqm3m/8KJJ0yulEdAvhd0M/LWBXvZ0wpe7fl34s3+xFJkj9V70rP/UCL7mOqNKqHpokBhFbXZOYb+Ow61/Ve8UsuI0vRRvCEe3rZuPNbZAW9dfN/SI1xb4wsX1KjqwYHtTm81Q0Kpc03FyYTZFTX3jFgNBeY7h/cj75qXnb9Yz1YEcxNzAiPNlJhU3TxmM6Sa7ht3+dTiZbV2ng2YOIrL6XLuW/uQ39TgTRT59ZY0R6RBWjxzYOfqRMdeCGi+dpMdLgue6OyEScXkHMdvsv01uTJCcach/pwwdWCNN9RM4b5taf3rnp0zTORNHV8z8Zf+kb2yN0cDWFTFu6BG3Cc+kGg4gSJCIcHRRp/WYyoVG38NK6LusxRn+2MK1NV97/SO5DSuuLwMbflTNhhP8zE8aEA8VIHbw9hotg/ezW2KnLlQs5fuIbYdKJYvzbFJ5Mp4S6rFyAgcngE3+N5cZ4sycEakHI6nycmJ4Q29N5HHei9WLY/YnQPIfvriZA3H+HQ3BAcP8gAP9J0lNYGKbq/rD7bzB3WWm5ZKcrTGNC6IpTYCVfNKYQx6vp0WYXbHFDKvlBDLPb6npC+DtcQrSWsOkfgTekW9zRm35w2z2bj+K6ip9bD+S/5E7dGnvI3WrAtm/C84PCb87P/5wJDG8HrrvsxZOGZ/ypUjooygXcIbDlFGySwEYLuRAW6zbutmDLrVY+OL8xtglxtyqxGR2U89sE2b/LT704rFMpIQ8R7aqBKEx2rJ1JIoytz092IG9Bimz5hQg3OFjKBHE0N/dZaky7l5n1qPqTjmBnHz/Teuk01HlcbrgT2HpBAiGuCW4Aq3mVCH/E6byiYi4/b8B0Irnq+q+U70/hC6qBHZm/LUQxXpY/G4r0J95nkrrcgfroOTj5OCKdroi3zxdFm5K6X256MXtKyMCCDc+r6k8eZ8Fhvpbedifzr3tuRXoGq8jez0Dl4wBUK1o6v2hM+DMO3rHrmWBwF+q5S3UaGDtZsXjC1kITeDWoKSprUZkfh+b67bLzp+ISQjVEJkcrrhlkRHH9S04Orcje5AunYTBjFTU8sBjI/r4IwiYvC9d2Krod8t1MdI+qrxsk4CARFDTLVqSvMs/uQ7YB65tf4FsIpacNiJCU3Pk6pfQ2iWFfPETig6J3UalTx21ByFv/wPmFSdqlHRzXoTDvDcgOezUCgTHr6fneBKGuc9fxabIFHjV2Jdd0Z2YgOOrAJAcuZbTcF8kVLw/EGZd5NDnvbDSbr98Uxm7C3oe1Seog/8nmxmEmrtdf/9pcAL/EYP0RZf+nmr8s/+64Q8mWBfmwFkvyRdZeamPm8sssZTc/aMYW8pk7DcH72xI8o2fNEOrdui3CaRkgj0PhdyB9K57f1IPGbDbzfR8yXBluSCnf1hkbJL4P9RVkUX9B6M98D2LUxqpb/78qP4+KQNgNypdC+J38fn4FKXuHazWAcngDPHcnjWcjKBXyzMCO5i4UGJdpFpgssyWVfLWQr+nJdmChujAFlJn2d0IbNpr0gZz/y+UnIL9J+EfWpw6nI1/4LcqdHd+DsEr4wBPBVc75tAH6cqqgEQDzptvjw3rr3dGRN1yWzzf2j1pjc5uN/7XZOmqVNFvwy9FR6+yhre/8eecvN6petkYl/ymkSD7YjrOLmlK/JdlVLiXhR76XDlwKj/odqtVkW5gsPMurU5KyNIrfy5dSQcAbzUS4STm5S5CKcwjHZNUHH/9bPnE+lE8W8pcemct3h0WcXLmLaknC5GQV+R9BuUdoAbXBwI2smT2CnOjSnW3R3aK6l4k0YlqVda5/w0h1SOg468Hc+lkhsjoU/1AujiCv9DQrX779DkzxQVqeZes7VeT/vHxyeBknNlJVKIbiHewy2S3ErDztYXTfDrs35Dz1dr9V1SvEbhFuQl1ssjFhKl9PRHHhLA4zHXc9MO/lV9fUTVcUkG71wx3z3Ut+xMvraWd+Iicd7cqyopsfdrnOz7aM5c1ucMGVZn1JepkXt8/9uKx5VPSLEdmhWpRwn5Lv5g1IHk84W3Gi+xPy/4zzQw07CD2TXMxrW0f3JY1iE4uwOutz2ntFse6OM3tSHVkrdQZ7eTLyYUuAZ9c8aOx7XP6x9Qm5siLwH/MHflf+F+UPc7ff7BqIVNUlMKTUV10TF/7c+clrKG4nAWQ5pqWCcrm9Z9KzVhIec0c5+RgK6wv9+2leJZ8sy2dqkgqvuJg88MtipzrtKau+Sj4kq1ZooOpTBPr9IqaVfPOx8+dVkRfH6ctnHNpARvIWqIcmqJQvNf9pV5hNaPwgJigFcYFu2qI3huYBwiSjT2fQV91wBkWt/jmXb6HHhjAP8r1kv/oOLdnLFKqBuJOzsp0kTEejKbTBK44FFFoekN9fvKlxiGzBhXVX0arfp4pupaZYlq82wmGwl0MH9N+7Q1Ps7j2ZDiaTE8/OTsZJYR/R8kxKRSEUaWDw+SNSQuz3CuOFbaYcCSkhE6K7fzqddr45JOptYsJ3ZcMbQC6tnoAx9LFvYtOwvdejtY3mD+vpdpOv/P2ZWrPVO75FjIGkU4U+MFd52nPLFO2kcQw90fsF24CstZeDT5M1MJCAws1cWz/237k/BkOwPozVJ7JXxFAYRAv5SkWBJ4ZZL++Dd2h6DineC8PQ9xunXF4YSPKE6iQx9ofFE46rf/UzGD+xPtR+0AqH6zn73IuYL0WP0iIJ2ozNnb+UD+uxDv3Ki7TIYuqQrV1TdJed//UsS0SNccX41vbM3BoB/XrR+O2xvg69dANSoWSS78y8wn+Rz8UoLvVhWBS7HQJ+VqaCyW7DvwYHSb12X4P1bUuVzm8Wzq9cSpWajhszWx6BFImfbtv6s/4K/gflA+RasicgkC2isOKqlcXeOkSv+mU8PJCcb3XjPe+DvR+I+G1NOZC3VfSr8aEd8dPvz7lyY/EmhKoP+kJFINa9SXaqB2BjQRO7k8TDvTaESGiBJCzAzbt1sd7bGMBm+F7sXW4SpYdQ6M+dvw/7pQ8uWOu8O1zf2zs4bK1NNVH9VZc9Kh9EbWhCFmeIUJ9Gg3a7DVavwY+2ckhe/r286NUHjioTHDw0OB81N84GeXncB9cHES3fBUJrEsEf+d0zcG81Tnm0V0aYcrFduKMseyUtB6zB1fnP6n5SnaCVZW4O31er3gU5qxa/ChSU6PRv9Ep/tYDRXfn3+Ue+VQNZjqkHLk3/gymLmrn1/39ugP/EeIQgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIs8z8dKFvbcnmSAgAAAABJRU5ErkJggg==" alt="">
+                           </div>
+                           <div class="content">
+                               <div class="title">
+                                   Hindware<br>
+                                   <h6>Gurugram</h6>
+                                </div> 
+                              <div class="btn">
+                                 <button class="btn-seller-carousel">Read more</button>
+                              </div>
+                           </div>
+                        </div> 
+                    </div>
+               </div>
+         </section>
+
+         <section class="akcategory ">
+            <div class="sellerheading">
+               <h4>SEARCH SELLERS BY CATEGORY</h4>
+               <hr>
+            </div>
+            <div class="filters">
+               <a href=""><div class="box box1">Filter 1</div></a>   
+               <a href=""><div class="box box2">Filter 2</div></a>
+               <a href=""><div class="box box3">Filter 3</div></a>
+               <a href=""><div class="box box4">Filter 4</div></a>
+            </div>
+            
+            <div class="akcarousel1 akC1">
+             <div class="slider3 owl-carousel">
+                 <div class="ak-seller-card">
+                    <div class="ak-img">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFc7ut1N_ECVoaQ9pRlD_k7Ew8nMhXtO0NGA&usqp=CAU" alt="">
+                    </div>
+                    <div class="content">
+                       <div class="title">
+                          Hindware<br>
+                          <h6>Gurugram</h6>
+                       </div>
+       
+                       <div class="btn">
+                          <button>Read more</button>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="ak-seller-card">
+                    <div class="ak-img">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgyaYpv-u0lja-kIXAE7_SaqmBTUv5biunEg&usqp=CAU" alt="">
+                    </div>
+                    <div class="content">
+                     <div class="title">
+                         Hindware<br>
+                         <h6>Gurugram</h6>
+                      </div>
+                       <div class="btn">
+                          <button>Read more</button>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="ak-seller-card">
+                    <div class="ak-img">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK8oPboXRjT06PMSpM8p3Be8miVMUIhnJNIA&usqp=CAU" alt="">
+                    </div>
+                    <div class="content">
+                     <div class="title">
+                         Hindware<br>
+                         <h6>Gurugram</h6>
+                      </div>
+                       <div class="btn">
+                          <button>Read more</button>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="ak-seller-card">
+                     <div class="ak-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWU0fI4Iv17na1ec__tFDaV_Dc7zJo33iL2g&usqp=CAU" alt="">
+                     </div>
+                     <div class="content">
+                         <div class="title">
+                             Hindware<br>
+                             <h6>Gurugram</h6>
+                          </div> 
+                        <div class="btn">
+                           <button>Read more</button>
+                        </div>
+                     </div>
+                  </div> 
+              </div>
+         </div>
+         </section>   
+         </section>
+         <section class="bg-white border-top mt-auto">
+            <div class="container">
+               <div class="row no-gutters">
+                  <div class="col-lg-3 col-md-6">
+                     <a class="text-reset border-left text-center p-4 d-block" href="https://www.kitchenbrandstore.com/terms">
+                        <i class="la la-file-text la-3x text-primary mb-2"></i>
+                        <h4 class="h6">Terms &amp; conditions</h4>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <a class="text-reset border-left text-center p-4 d-block" href="https://www.kitchenbrandstore.com/return-policy">
+                        <i class="la la-mail-reply la-3x text-primary mb-2"></i>
+                        <h4 class="h6">return policy</h4>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <a class="text-reset border-left text-center p-4 d-block" href="https://www.kitchenbrandstore.com/support-policy">
+                        <i class="la la-support la-3x text-primary mb-2"></i>
+                        <h4 class="h6">Support Policy</h4>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <a class="text-reset border-left border-right text-center p-4 d-block" href="https://www.kitchenbrandstore.com/privacy-policy">
+                        <i class="las la-exclamation-circle la-3x text-primary mb-2"></i>
+                        <h4 class="h6">privacy policy</h4>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="bg-dark py-5 text-light footer-widget">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-5 col-xl-4 text-center text-md-left">
+                     <div class="mt-4">
+                        <a href="https://www.kitchenbrandstore.com" class="d-block">
+                        <img class=" ls-is-cached lazyloaded" src="https://kbs2ibsimages.s3.ap-south-1.amazonaws.com/uploads/all/6xiPVienarYF2yzdqSlCUeweIInlN952TZer7tEJ.png" data-src="https://kbs2ibsimages.s3.ap-south-1.amazonaws.com/uploads/all/6xiPVienarYF2yzdqSlCUeweIInlN952TZer7tEJ.png" alt="Kitchen Brand Store" height="44">
+                        </a>
+                        <div class="my-3">
+                           We Aggregate 100+ Top Brand Home and Kitchen appliances from 2000+ nearest authorized Brand Stores in India. we help customers to choose right product and then get it delivered to their doorstep with our full responsibility. customer do not have to run post to pillar to arrange services installation or finding best price and availability of premium and exclusive products.
+                        </div>
+                        <div class="d-inline-block d-md-block mb-4">
+                           <form class="form-inline" method="POST" action="https://www.kitchenbrandstore.com/subscribers">
+                              <input type="hidden" name="_token" value="Zvf2bLU80qqg571z5PWf4qRUpDJycrXQewxlMvqS">                            
+                              <div class="form-group mb-0">
+                                 <input type="email" class="form-control" placeholder="Your Email Address" name="email" required="">
+                              </div>
+                              <button type="submit" class="btn btn-primary">
+                              Subscribe
+                              </button>
+                           </form>
+                        </div>
+                        <div class="w-300px mw-100 mx-auto mx-md-0">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 ml-xl-auto col-md-4 mr-0">
+                     <div class="text-center text-md-left mt-4">
+                        <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                           Contact Info
+                        </h4>
+                        <ul class="list-unstyled">
+                           <li class="mb-2">
+                              <span class="d-block opacity-30">Address:</span>
+                              <span class="d-block opacity-70">#6, 12 Biswa, Near Akash Public School, Gurgaon Village</span>
+                           </li>
+                           <li class="mb-2">
+                              <span class="d-block opacity-30">Phone:</span>
+                              <span class="d-block opacity-70">+919711995959 , +918930313030</span>
+                           </li>
+                           <li class="mb-2">
+                              <span class="d-block opacity-30">Email:</span>
+                              <span class="d-block opacity-70">
+                              <a href="mailto:sales@kitchenbrandstore.com" class="text-reset">sales@kitchenbrandstore.com</a>
+                              </span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4">
+                     <div class="text-center text-md-left mt-4">
+                        <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                           Other Policies
+                        </h4>
+                        <ul class="list-unstyled">
+                           <li class="mb-2">
+                              <a href="https://kitchenbrandstore.com/shipping-delivery-policy" class="opacity-50 hov-opacity-100 text-reset">
+                              Delhivery and Shipping Policy
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                     <div class="text-center text-md-left mt-4">
+                        <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                           My Account
+                        </h4>
+                        <ul class="list-unstyled">
+                           <li class="mb-2">
+                              <a class="opacity-50 hov-opacity-100 text-reset" href="https://www.kitchenbrandstore.com/users/login">
+                              Login
+                              </a>
+                           </li>
+                           <li class="mb-2">
+                              <a class="opacity-50 hov-opacity-100 text-reset" href="https://www.kitchenbrandstore.com/purchase_history">
+                              Order History
+                              </a>
+                           </li>
+                           <li class="mb-2">
+                              <a class="opacity-50 hov-opacity-100 text-reset" href="https://www.kitchenbrandstore.com/wishlists">
+                              My Wishlist
+                              </a>
+                           </li>
+                           <li class="mb-2">
+                              <a class="opacity-50 hov-opacity-100 text-reset" href="https://www.kitchenbrandstore.com/track-your-order">
+                              Track Order
+                              </a>
+                           </li>
+                           <li class="mb-2">
+                              <a class="opacity-50 hov-opacity-100 text-light" href="https://www.kitchenbrandstore.com/affiliate">Be an affiliate partner</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="text-center text-md-left mt-4">
+                        <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                           Be A Seller
+                        </h4>
+                        <a href="https://www.kitchenbrandstore.com/shops/create" class="btn btn-primary btn-sm shadow-md">
+                        Apply Now
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- FOOTER -->
+         <footer class="pt-3 pb-7 pb-xl-3 bg-black text-light">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-4">
+                     <div class="text-center text-md-left" current-verison="6.5.0">
+                        Kitchen Brand Store&nbsp;<span style="color: rgb(68, 68, 68); font-family: Roboto, Helvetica, sans-serif; font-size: 13px;">™</span>&nbsp;- All copyrights Reserved 2017-2022
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <ul class="list-inline my-3 my-md-0 social colored text-center">
+                        <li class="list-inline-item">
+                           <a href="https://www.facebook.com/kitchenbrandstore" target="_blank" class="facebook"><i class="lab la-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.twitter.com/kitchen_brand" target="_blank" class="twitter"><i class="lab la-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.instagram.com/kitchenbrandstore" target="_blank" class="instagram"><i class="lab la-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.youtube.com/kitchenbrandstore" target="_blank" class="youtube"><i class="lab la-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.linkedin.com/company/kitchenbrandstore" target="_blank" class="linkedin"><i class="lab la-linkedin-in"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="text-center text-md-right">
+                        <ul class="list-inline mb-0">
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <div class="aiz-mobile-bottom-nav d-xl-none fixed-bottom bg-white shadow-lg border-top rounded-top" style="box-shadow: 0px -1px 10px rgb(0 0 0 / 15%)!important; ">
+            <div class="row align-items-center gutters-5">
+               <div class="col">
+                  <a href="https://www.kitchenbrandstore.com" class="text-reset d-block text-center pb-2 pt-3">
+                  <i class="las la-home fs-20 opacity-60 "></i>
+                  <span class="d-block fs-10 fw-600 opacity-60 ">Home</span>
+                  </a>
+               </div>
+               <div class="col">
+                  <a href="https://www.kitchenbrandstore.com/categories" class="text-reset d-block text-center pb-2 pt-3">
+                  <i class="las la-list-ul fs-20 opacity-60 "></i>
+                  <span class="d-block fs-10 fw-600 opacity-60 ">Categories</span>
+                  </a>
+               </div>
+               <div class="col-auto">
+                  <a href="https://www.kitchenbrandstore.com/cart" class="text-reset d-block text-center pb-2 pt-3">
+                  <span class="align-items-center bg-primary border border-white border-width-4 d-flex justify-content-center position-relative rounded-circle size-50px" style="margin-top: -33px;box-shadow: 0px -5px 10px rgb(0 0 0 / 15%);border-color: #fff !important;">
+                  <i class="las la-shopping-bag la-2x text-white"></i>
+                  </span>
+                  <span class="d-block mt-1 fs-10 fw-600 opacity-60 ">
+                  Cart
+                  (<span class="cart-count">0</span>)
+                  </span>
+                  </a>
+               </div>
+               <div class="col">
+                  <a href="https://www.kitchenbrandstore.com/all-notifications" class="text-reset d-block text-center pb-2 pt-3">
+                  <span class="d-inline-block position-relative px-2">
+                  <i class="las la-bell fs-20 opacity-60 "></i>
+                  </span>
+                  <span class="d-block fs-10 fw-600 opacity-60 ">Notifications</span>
+                  </a>
+               </div>
+               <div class="col">
+                  <a href="https://www.kitchenbrandstore.com/users/login" class="text-reset d-block text-center pb-2 pt-3">
+                     <span class="d-block mx-auto">
+                     <img src="https://www.kitchenbrandstore.com/public/assets/img/avatar-place.png" class="rounded-circle size-20px">
+                     </span>
+                     <span class="d-block fs-10 fw-600 opacity-60">Account</span>
+                     <!-- <span style="background-color: #e62e04;padding: 1px 7px;border-radius: 10px;font-size: 10px;color: #fff;overflow: hidden;position: absolute;right: 15px;top: -1px;"><b>Sign Up & Get ₹250</b></span> -->
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         function confirm_modal(delete_url)
+         {
+         jQuery('#confirm-delete').modal('show', {backdrop: 'static'});
+         document.getElementById('delete_link').setAttribute('href' , delete_url);
+         }
+      </script>
+      <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
+               </div>
+               <div class="modal-body">
+                  <p>Delete confirmation message</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <a id="delete_link" class="btn btn-danger btn-ok">Delete</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         function account_delete_confirm_modal(delete_url)
+         {
+         jQuery('#account_delete_confirm').modal('show', {backdrop: 'static'});
+         document.getElementById('account_delete_link').setAttribute('href' , delete_url);
+         }
+      </script>
+      <div class="modal fade" id="account_delete_confirm" tabindex="-1" role="dialog" aria-labelledby="account_delete_confirmModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header d-block py-4">
+                  <div class="d-flex justify-content-center">
+                     <span class="avatar avatar-md mb-2 mt-2">
+                     <img src="https://www.kitchenbrandstore.com/public/assets/img/avatar-place.png" class="image rounded-circle m-auto" onerror="this.onerror=null;this.src='https://www.kitchenbrandstore.com/public/assets/img/avatar-place.png';">
+                     </span>
+                  </div>
+                  <h4 class="modal-title text-center fw-700" id="account_delete_confirmModalLabel" style="color: #ff9819;">Delete Your Account</h4>
+                  <p class="fs-16 fw-600 text-center" style="color: #8d8d8d;">Warning: You cannot undo this action</p>
+               </div>
+               <div class="modal-body pt-3 pb-5 px-xl-5">
+                  <p class="text-danger mt-3"><i><strong>Note:&nbsp;Don't Click to any button or don't do any action during account Deletion, it may takes some times.</strong></i></p>
+                  <p class="fs-14 fw-700" style="color: #8d8d8d;">Deleting Account Means:</p>
+                  <div class="row bg-soft-warning py-2 mb-2 ml-0 mr-0 border-left border-width-2 border-danger">
+                     <div class="col-1">
+                        <img src="https://www.kitchenbrandstore.com/public/assets/img/warning.png" class="h-20px">
+                     </div>
+                     <div class="col">
+                        <p class="fw-600 mb-0">If you create any classified ptoducts, after deleting your account, those products will no longer in our system</p>
+                     </div>
+                  </div>
+                  <div class="row bg-soft-warning py-3 ml-0 mr-0 border-left border-width-2 border-danger">
+                     <div class="col-1">
+                        <img src="https://www.kitchenbrandstore.com/public/assets/img/warning.png" class="h-20px">
+                     </div>
+                     <div class="col">
+                        <p class="fw-600 mb-0">After deleting your account, wallet balance no longer in our system</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <a id="account_delete_link" class="btn btn-danger btn-rounded btn-ok">Delete Account</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="addToCart">
+         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-zoom product-modal" id="modal-size" role="document">
+            <div class="modal-content position-relative">
+               <div class="c-preloader text-center p-3">
+                  <i class="las la-spinner la-spin la-3x"></i>
+               </div>
+               <button type="button" class="close absolute-top-right btn-icon close z-1" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true" class="la-2x">×</span>
+               </button>
+               <div id="addToCart-modal-body">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="chat_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-dialog-zoom product-modal" id="modal-size" role="document">
+            <div class="modal-content position-relative">
+               <div class="modal-header">
+                  <h5 class="modal-title fw-600 h5">Any query about this product</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <form class="" action="https://www.kitchenbrandstore.com/conversations" method="POST" enctype="multipart/form-data">
+                  <input type="hidden" name="_token" value="Zvf2bLU80qqg571z5PWf4qRUpDJycrXQewxlMvqS">
+                  <input type="hidden" name="product_id" value="12879">
+                  <div class="modal-body gry-bg px-3 pt-3">
+                     <div class="form-group">
+                        <input type="text" class="form-control mb-3" name="title" value="Havells Freddo-i 70L Desert Air Cooler  White &amp; Brown" placeholder="Product Name" required="">
+                     </div>
+                     <div class="form-group">
+                        <textarea class="form-control" rows="8" name="message" required="" placeholder="Your Question">https://www.kitchenbrandstore.com/product/havells-freddo-i-70l-desert-air-cooler-white-brown</textarea>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-primary fw-600" data-dismiss="modal">Cancel</button>
+                     <button type="submit" class="btn btn-primary fw-600">Send</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-zoom" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-600">Login</h6>
+                  <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true"></span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="p-3">
+                     <form class="form-default" role="form" action="https://www.kitchenbrandstore.com/users/login/cart" method="POST">
+                        <input type="hidden" name="_token" value="Zvf2bLU80qqg571z5PWf4qRUpDJycrXQewxlMvqS">
+                        <div class="form-group">
+                           <input type="text" class="form-control h-auto form-control-lg " value="" placeholder="Email or Phone" name="email" id="email">
+                           <span class="opacity-60">Use country code before number</span>
+                        </div>
+                        <div class="form-group">
+                           <input type="password" name="password" class="form-control h-auto form-control-lg" placeholder="Password">
+                        </div>
+                        <div class="row mb-2">
+                           <div class="col-6">
+                              <label class="aiz-checkbox">
+                              <input type="checkbox" name="remember">
+                              <span class="opacity-60">Remember Me</span>
+                              <span class="aiz-square-check"></span>
+                              </label>
+                           </div>
+                           <div class="col-6 text-right">
+                              <a href="https://www.kitchenbrandstore.com/password/reset" class="text-reset opacity-60 fs-14">Forgot password?</a>
+                           </div>
+                        </div>
+                        <div class="mb-5">
+                           <button type="submit" class="btn btn-primary btn-block fw-600">Login</button>
+                        </div>
+                     </form>
+                     <div class="text-center mb-3">
+                        <p class="text-muted mb-0">Dont have an account?</p>
+                        <a href="https://www.kitchenbrandstore.com/users/registration">Register Now</a>
+                     </div>
+                     <div class="separator mb-3">
+                        <span class="bg-white px-3 opacity-60">Or Login With</span>
+                     </div>
+                     <ul class="list-inline social colored text-center mb-5">
+                        <li class="list-inline-item">
+                           <a href="https://www.kitchenbrandstore.com/social-login/redirect/facebook" class="facebook">
+                           <i class="lab la-facebook-f"></i>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.kitchenbrandstore.com/social-login/redirect/google" class="google">
+                           <i class="lab la-google"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="askService">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Ask Service</h4>
+                  <button type="button" class="close hide-modal" data-dismiss="modal">×</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <form action="https://www.kitchenbrandstore.com/saveAskService" method="POST">
+                     <input type="hidden" name="_token" value="Zvf2bLU80qqg571z5PWf4qRUpDJycrXQewxlMvqS">
+                     <input type="hidden" name="product" value="12879">
+                     <div class="row">
+                        <div class="form-group col-md-12 mt-0">
+                           <!-- <input class="form-control" type="text" id="search_product" name="search_product"
+                              placeholder="Search product..." value="" required> -->
+                           <input class="form-control" type="hidden" id="products_ids" name="products_ids[]" placeholder="" value="12879">
+                        </div>
+                        <div class="form-group col-md-6 mt-0">
+                           <input class="form-control" type="text" id="name" name="name" placeholder="Enter Name" value="" required="">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <input class="form-control" type="email" id="email" name="email" placeholder="Enter Email" value="" required="">
+                        </div>
+                        <div class="form-group col-md-12">
+                           <input class="form-control" type="mobile" id="mobile" name="mobile" placeholder="Enter Mobile" value="" required="">
+                        </div>
+                        <div class="form-group col-md-12">
+                           <textarea class="form-control" rows="2" cols="40" id="message" name="message" placeholder="Write your message here..." style="resize: none;" required=""></textarea>
+                        </div>
+                        <div class="form-group col-md-12 text-right">
+                           <button type="button" class="btn btn-dark hide-modal mr-4" data-dismiss="modal">Close</button>
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Media Coverage modal -->
+      <div class="modal" id="mediacover">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">We are making News</h4>
+                  <button type="button" class="close hide-modal" data-dismiss="modal">×</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12 mt-0" id="vshowIm">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="showIm">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">View Image</h4>
+                  <button type="button" class="close hide-modal" data-dismiss="modal">×</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12 mt-0" id="vshowIm">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="showVid">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">View Video</h4>
+                  <button type="button" class="close hide-modal" onclick="showVidHide()" data-dismiss="modal">×</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12 mt-0" id="vshowVid">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- SCRIPTS -->
+      <script src="script.js"></script>
+      <script src="https://www.kitchenbrandstore.com/public/assets/js/vendors.js?t=1688658311"></script>
+      <script src="https://www.kitchenbrandstore.com/public/assets/js/aiz-core.js"></script>
+      <script src="https://www.kitchenbrandstore.com/public/assets/js/jquery-ui.min.js"></script>
+    
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>  
+
+      <style>
+         .whatsapp-float {
+         position: fixed;
+         width: 54px;
+         height: 54px;
+         bottom: 47px;
+         right: 47px;
+         background-color: #25d366;
+         border: 1px solid #25d366;
+         color: #FFF;
+         border-radius: 50px;
+         text-align: center;
+         font-size: 38px;
+         box-shadow: 2px 2px 3px #999;
+         z-index: 999999999;
+         }
+         .whatsapp-float:hover {
+         color: #FFF;
+         background-color: #25d366;
+         transition: 0.3s;
+         }
+      </style>
+      <a href="javascript:void(0)" onclick="openWati('https://api.whatsapp.com/send/?phone=+918930313030&amp;text=Hello, I have a question about https://www.kitchenbrandstore.com/product/havells-freddo-i-70l-desert-air-cooler-white-brown')" class="whatsapp-float">
+      <i class="la la-whatsapp my-whatsapp-float"></i>
+      </a>
+      <script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-766417488"></script>
+      <script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-766417488"></script>
+      <script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-766417488");</script>
+      <script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-766417488");</script>
+      <iframe height="100%" width="100%" title="rzpAffordabilityDetailFrame" class="rzp-iframe" frameborder="0" id="rzpAffordabilityDetailFrame" style="z-index: 99999; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; border: 0px; outline: 0px; display: none;" src="https://cdn.razorpay.com/widgets/affordability/detailFrame.html"></iframe>
+   </body>
 </html>
