@@ -1,52 +1,49 @@
-$(".slider").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000, //2000ms = 2s;
-    autoplayHoverPause: true,
-    responsive:{
- 0:{
-     items:1
- },
- 600:{
-     items:1
- },
- 1000:{
-     items:4
- }
-}
-  });
 
-  $(".slider2").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000, //2000ms = 2s;
-    autoplayHoverPause: true,
-    responsive:{
-     0:{
-        items: 2
-     },
-     600:{
-        items: 2
-     },
-     1000:{
-        items: 6
-     }
-    }
-  });
-  $(".slider3").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000, //2000ms = 2s;
-    autoplayHoverPause: true,
-    responsive:{
-     0:{
-        items: 2
-     },
-     600:{
-        items: 2
-     },
-     1000:{
-        items: 5
-     }
-    }
-  });
+    $("#news-slider").owlCarousel({
+        items: 3,
+        navigation: true,
+        navigationText:["",""],
+        autoPlay:true,
+    });
+
+    $("#brand-slider").owlCarousel({
+        items: 6,
+        dots: false,
+        mouseDrag: true,
+        navigation: true,
+        navigationText:["",""],
+        autoPlay:true,
+        responsiveClass: true,
+        responsive: {
+        0:{
+          items: 2
+        },
+        480:{
+          items: 2
+        },
+        769:{
+          items: 6
+        }
+        }
+    });
+    $("#news-slider-2").owlCarousel({
+        items: 4,
+        dots: false,
+        mouseDrag: true,
+        navigation: true,
+        navigationText:["",""],
+        autoPlay:true,
+        responsiveClass: true,
+        responsive: {
+        0:{
+          items: 2
+        },
+        480:{
+          items: 2
+        },
+        769:{
+          items: 6
+        }
+        }
+    });
+
