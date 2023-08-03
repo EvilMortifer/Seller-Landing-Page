@@ -2,7 +2,9 @@
 
 
 
-
+.ak-SMP-mobile-code{
+	display: none;
+}
 .ak-SLG-header-city-info{
   background-image: linear-gradient(to bottom right, rgba(255, 162, 0, 0.449), rgba(255, 153, 0, 0.668)), url("Group\ 2.png") !important;
   width: 100%;
@@ -342,6 +344,37 @@
   .owl-next{
 	display: none;
   }
+  .ak-SMP-desktop-code{
+	display: none;
+  }
+  .ak-SMP-mobile-code{
+	display: block; 
+}
+
+
+
+/*mobile carousel code*/
+@media (max-width:480px) {
+	  .carousel-inner .carousel-item>div {
+		  display:none;
+	  }
+	  .carousel-inner .carousel-item>div:first-child {
+		  display:block;
+	  }
+	}
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+	  display: flex;
+	}
+	.carousel-inner .carousel-item-right,
+	.carousel-inner .carousel-item-left {
+	  transform: translateX(0);
+	}
+	.ak-SLG-header-city-info-box-col{
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 
