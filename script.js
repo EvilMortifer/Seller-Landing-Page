@@ -1,49 +1,82 @@
 $(document).ready(function(){
-    $("#news-slider").owlCarousel({
-        items: 3,
-        navigation: true,
-        navigationText:["",""],
-        autoPlay:true,
+    $("#city-slider").owlCarousel({
+      loop: true,
+      navigation: true,
+      navigationText:["",""],
+      autoplay:true,
+      autoplayTimeout: 2500,
+      responsive: {
+        0:{
+          items: 1
+        },
+        480:{
+          items: 2
+        }, 
+        769:{
+          items: 2
+        }
+      }
     });
 
-    $("#brand-slider").owlCarousel({
-        items: 6,
-        dots: false,
-        mouseDrag: true,
-        navigation: true,
-        navigationText:["",""],
-        autoPlay:true,
-        responsiveClass: true,
-        responsive: {
+    $("#news-slider").owlCarousel({
+      loop: true,
+      navigation: true,
+      navigationText:["",""],
+      autoplay:true,
+      autoplayTimeout: 2500,
+      responsive: {
         0:{
-          items: 2
+          items: 1
         },
         480:{
-          items: 2
-        },
+          items: 1
+        }, 
         769:{
-          items: 6
+          items: 4
         }
-        }
-    });
-    $("#news-slider-2").owlCarousel({
-        items: 4,
-        dots: false,
-        mouseDrag: true,
-        navigation: true,
-        navigationText:["",""],
-        autoPlay:true,
-        responsiveClass: true,
-        responsive: {
-        0:{
-          items: 2
-        },
-        480:{
-          items: 2
-        },
-        769:{
-          items: 6
-        }
-        }
-    });
+      }
+  });
+
+  $("#brand-slider").owlCarousel({
+      loop: true,
+      dots: false,
+      mouseDrag: true,
+      navigation: true,
+      navigationText:["",""],
+      autoPlay:true,
+      autoplayTimeout: 2500,
+      responsiveClass: true,
+     responsive: {
+      0:{
+        items: 2
+      },
+      480:{
+        items: 2
+      }, 
+      769:{
+        items: 6
+      }
+      }
+  });
+  $("#news-slider-2").owlCarousel({
+      loop: true,
+      dots: false,
+      mouseDrag: true,
+      navigation: true,
+      navigationText:["",""],
+      autoPlay:true,
+      autoplayTimeout: 2500,
+      responsiveClass: true,
+      responsive: {
+      0:{
+        items: 1
+      },
+      480:{
+        items: 1
+      },
+      769:{
+        items: 4
+      }
+      }
+  });
 });
